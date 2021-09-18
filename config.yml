@@ -77,7 +77,7 @@ challenge:                   # Incoming challenges.
     - racingKings
     - threeCheck
   time_controls:             # Time controls to accept.
-    - bullet
+#   - bullet
     - blitz
     - rapid
 #   - classical
