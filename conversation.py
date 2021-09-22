@@ -35,7 +35,7 @@ class Conversation:
         elif cmd == "eval":
             self.send_reply(line, "I don't tell that to my opponent, sorry.")
         elif cmd == "Hi":
-            self.send_reply(line, "Hi {opponent}.")
+            self.send_reply(line, "Hi")
         elif cmd == "queue":
             if self.challengers:
                 challengers = ", ".join(["@" + challenger.challenger_name for challenger in reversed(self.challengers)])
