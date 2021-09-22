@@ -11,7 +11,7 @@ class Conversation:
         self.version = version
         self.challengers = challenge_queue
 
-    command_prefix = "!"
+    command_prefix = ""
 
     def react(self, line, game):
         logger.info("*** {} [{}] {}: {}".format(self.game.url(), line.room, line.username, line.text.encode("utf-8")))
@@ -34,6 +34,8 @@ class Conversation:
             self.send_reply(line, ", ".join(stats))
         elif cmd == "eval":
             self.send_reply(line, "I don't tell that to my opponent, sorry.")
+        elif cmd == "Hi":
+            self.send_reply(line, "Hi {ctx.author.name}.")
         elif cmd == "queue":
             if self.challengers:
                 challengers = ", ".join(["@" + challenger.challenger_name for challenger in reversed(self.challengers)])
