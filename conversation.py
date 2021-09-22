@@ -11,7 +11,7 @@ class Conversation:
         self.version = version
         self.challengers = challenge_queue
 
-    command_prefix = ""
+    command_prefix = "!"
 
     def react(self, line, game):
         logger.info("*** {} [{}] {}: {}".format(self.game.url(), line.room, line.username, line.text.encode("utf-8")))
