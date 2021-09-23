@@ -66,7 +66,7 @@ challenge:                   # Incoming challenges.
   max_increment: 0           # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
   min_increment: 0           # Minimum amount of increment to accept a challenge.
   max_base: 10               # Maximum amount of base time to accept a challenge. The max is 315360000 (10 years).
-  min_base: 0                # Minimum amount of base time to accept a challenge.
+  min_base: 8                # Minimum amount of base time to accept a challenge.
   variants:                  # Chess variants to accept (https://lichess.org/variant).
 #   - standard
 #   - fromPosition
@@ -82,8 +82,8 @@ challenge:                   # Incoming challenges.
     - bullet
     - blitz
     - rapid
-    - classical
-    - correspondence
+#   - classical
+#   - correspondence
   modes:                     # Game modes to accept.
     - casual                 # Unrated games.
     - rated                  # Rated games - must comment if the engine doesn't try to win.
